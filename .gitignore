@@ -1,0 +1,15 @@
+logs
+target
+/.idea
+/.idea_modules
+/.classpath
+/.project
+/.settings
+/RUNNING_PID
+app/domain/education/
+bin/
+libexec/
+project/project/
+test/controllers/people/
+test/controllers/util/AddEmailsTest.scala
+test/services/mail/Impl/

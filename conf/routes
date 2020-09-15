@@ -1,0 +1,37 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# An example controller showing a sample home page
+GET        /                    controllers.HomeController.index
+# An example controller showing how to use dependency injection
+GET        /setup               controllers.HomeController.setup
+
+
+# Map static resources from the /public folder to the /assets URL path
+GET        /assets/*file        controllers.Assets.versioned(path="/public", file: Asset)
+
+#Email Routes
+->         /util                controllers.util.UtilRouter
+
+#Address
+->         /address             controllers.address.AddressRouter
+
+#Contact
+->         /contact             controllers.contacts.ContactRouter
+#people
+->         /users               controllers.people.UsersRouter
+
+->         /organisation        controllers.organisation.OrganisationRouter
+
+->         /messages            controllers.messages.MessageRouter
+
+->         /subscription        controllers.subscriptions.SubscriptionRouter
+
+->         /statement           controllers.financials.FinancialsRouter
+
+->         /reports             controllers.reports.ReportsRouter
+
+->         /portfolio           controllers.portfolio.PortfolioRouter
+
+->          /hr                 controllers.hr.HrRouter
